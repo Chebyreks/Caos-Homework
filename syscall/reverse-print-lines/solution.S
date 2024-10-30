@@ -3,6 +3,8 @@
     .text
     .global _start
 
+//NOT WORKING
+
 _start:
     sub rsp, 64
     push 0
