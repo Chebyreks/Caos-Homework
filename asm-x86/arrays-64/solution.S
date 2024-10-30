@@ -7,10 +7,9 @@ sum:
     jmp loop
 
 loop:
-    mov     r10, [rsi+r9*4]
-    mov     r11, [rdx+r9*4]
-    add     r10, r11
-    mov     [rcx+r9*4], r10
+    mov     eax, [rsi+r9*4]
+    add     eax, [rdx+r9*4]
+    mov     [rcx+r9*4], eax
     add     r9, 1
     cmp     r9, rdi
     jz      end
